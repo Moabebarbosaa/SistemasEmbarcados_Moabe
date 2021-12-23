@@ -1,14 +1,14 @@
 #include <Arduino.h>
  
-uint8_t pin = 9;
+int pin = 9;
  
 void setup() {
  pinMode(pin, OUTPUT);
 }
  
 void loop() {
- digitalWrite(pin, 1);
+ digitalWrite(pin, HIGH);
  delay(5000);
- digitalWrite(pin, 0);
+ digitalWrite(pin, LOW);
  delay(30000);
 }
